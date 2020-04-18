@@ -3,11 +3,9 @@ import sys
 from datetime import date, datetime, timedelta,timezone
 import csv
 
-# accesskey = sys.argv[1]
-# secretkey = sys.argv[2]
-# client = boto3.client('iam', aws_access_key_id=accesskey, aws_secret_access_key=secretkey)
-
-client = boto3.client('iam', aws_access_key_id="AKIAREDACTED", aws_secret_access_key="REDACTED")
+accesskey = sys.argv[1]
+secretkey = sys.argv[2]
+client = boto3.client('iam', aws_access_key_id=accesskey, aws_secret_access_key=secretkey)
 
 def accesskey_fun(writer):
 	access_key_dict = {}
