@@ -14,8 +14,5 @@ create_subnet = client.create_subnet(CidrBlock=subnet_cidr,VpcId=vpcid)
 subnetid = create_subnet['Subnet']['SubnetId']
 print(subnetid)
 
-
-
-Internet gateway
-
-Route table
+# TODO: create and attach an internet gateway
+# TODO: create a route table and associate it with the subnet
