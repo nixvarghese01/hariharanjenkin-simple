@@ -1,9 +1,7 @@
 import boto3
 
 client = boto3.client('ec2',
-		region_name = 'ap-south-1',
-		aws_access_key_id = 'AKIAREDACTED',
-		aws_secret_access_key = 'REDACTED')
+		region_name = 'ap-south-1')
 		
 myec2 = client.describe_instances()
 for printins in myec2['Reservations']:
